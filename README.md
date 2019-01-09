@@ -36,6 +36,8 @@ After the build, there will be a prompt with a URL to connect to jupyter.
 
 The Dockerfile will generate a directory to save the tensorflow logs `/tmp/tflearn_logs`. 
 
+Take a look at the [tensorboard connection test notebook](https://github.com/MPierratos/datascience-container/blob/master/notebooks/TensorboardConnectionTest.ipynb) for sample execution.
+
 We use tf.keras.callbacks to send the model logs to tensorboard. You can execute the cell in the sample notebook taken from the tensorflow website (https://www.tensorflow.org/tutorials/). 
 
 Running `tensorboard --logdir=/tmp/tflearn_logs` will prompt a link to the 6006 port. If this link doesn't work, try `localhost:6006`.

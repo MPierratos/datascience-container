@@ -2,7 +2,7 @@
 
 Generate a docker container with data science stack installed.
 
-This will install jupyter notebook with Python, R, and Julia.
+Includes the installation of Miniconda using docker image [jupyter/datascience-notebook](https://hub.docker.com/r/jupyter/datascience-notebook) along with additional data science python packages, R, and Julia.
 
 Tensorflow cpu is installed with an exposed port for TensorBoard.
 

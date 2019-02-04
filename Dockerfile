@@ -8,10 +8,14 @@ RUN conda install --quiet --yes -c \
 RUN pip install -U tensorflow \
                    imutils \
                    plotly \
-                   tqdm
+                   tqdm \
+                   requests \
+                   BeautifulSoup4 \
+                   selenium
 
 RUN mkdir /tmp/tflearn_logs
 
-# mount folders
-VOLUME ["/data", "/notebooks", "/tmp/tflearn_logs"]
-WORKDIR /notebooks
+# mount tflogs
+VOLUME ["/tmp/tflearn_logs"]
+
+
